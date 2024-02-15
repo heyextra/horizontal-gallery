@@ -1,37 +1,37 @@
 const imageList = [
   {
     id: 1,
-    imageUrl: "https://source.unsplash.com/random",
+    imageUrl: "https://source.unsplash.com/random/?a",
     relatedProducts: ["1", "2"],
   },
   {
     id: 2,
-    imageUrl: "https://source.unsplash.com/random/?productshot",
+    imageUrl: "https://source.unsplash.com/random/?b",
     relatedProducts: ["1", "2"],
   },
   {
     id: 3,
-    imageUrl: "https://source.unsplash.com/random",
+    imageUrl: "https://source.unsplash.com/random/?c",
     relatedProducts: ["1", "2", "3"],
   },
   {
     id: 2,
-    imageUrl: "https://source.unsplash.com/random/?productshot",
+    imageUrl: "https://source.unsplash.com/random/?d",
     relatedProducts: ["1", "2"],
   },
   {
     id: 3,
-    imageUrl: "https://source.unsplash.com/random",
+    imageUrl: "https://source.unsplash.com/random/?e",
     relatedProducts: ["1", "2"],
   },
   {
     id: 2,
-    imageUrl: "https://source.unsplash.com/random/?productshot",
+    imageUrl: "https://source.unsplash.com/random/?f",
     relatedProducts: ["1", "2"],
   },
   {
     id: 3,
-    imageUrl: "https://source.unsplash.com/random",
+    imageUrl: "https://source.unsplash.com/random/?g",
     relatedProducts: ["1", "2"],
   },
 ];
@@ -97,7 +97,7 @@ function updateDetailsContent(index) {
         const div = document.createElement("div");
         div.innerHTML = `
           <img src="${product.imageUrl}" alt="Product Image">
-          <h2>${product.description}</h2>
+          <p>${product.description}</p>
         `;
         // Custom css property to stagger related products into a grid.
         // We +1 so the first item != 0
