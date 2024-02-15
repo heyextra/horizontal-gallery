@@ -58,10 +58,12 @@ const details = document.getElementById("details");
 
 function updateLastChildPadding() {
   const lastChild = container.children[container.children.length - 1];
-  if (lastChild) {
+  if (lastChild && lastChild.width < container.getBoundingClientRect().width) {
     lastChild.style.paddingRight = `${
       container.getBoundingClientRect().width - lastChild.width
     }px`;
+  }else{
+    lastChild.style.paddingRight = "0px";
   }
 }
 
