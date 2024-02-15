@@ -5,6 +5,13 @@ body{
     overflow-x: hidden;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+@media only screen and (max-width: 600px) {
+    #gallery {
+        gap: 10px;
+        margin-top: 50px;
+        height: 60vh;
+    }
+}
 
 #gallery{
     margin-top: 100px;
@@ -19,7 +26,7 @@ body{
 
 }
 
-#gallery > img{
+#gallery  img{
     object-fit: cover;
     height: 100%;
     scroll-snap-align: start;
